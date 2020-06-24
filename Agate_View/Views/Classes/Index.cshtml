@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Agate_Model.Class>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(m => m.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m => m.ClassNumber)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m => item.Grade)
+                </td>
+                <td>
+                    @Html.DisplayFor(m => item.ClassNumber)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new {  grade=item.Grade, classNumber=item.ClassNumber }) |
+                    @Html.ActionLink("Details", "Details", new { grade = item.Grade, classNumber = item.ClassNumber }) |
+                    @Html.ActionLink("Delete", "Delete", new { grade = item.Grade, classNumber = item.ClassNumber })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

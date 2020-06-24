@@ -1,2 +1,5 @@
 .vs/
-ASP-Agate-01/bin/
+Agate_API/bin/
+Agate_Test/bin/
+Agate_View/bin/
+Agate_Model/bin/

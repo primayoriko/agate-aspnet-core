@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agate_Model", "Agate_Model\Agate_Model.csproj", "{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agate_API", "Agate_API\Agate_API.csproj", "{1BAA916B-B90F-4F24-982C-2FD989ABD037}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agate_View", "Agate_View\Agate_View.csproj", "{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agate_Test", "Agate_Test\Agate_Test.csproj", "{09A2E91C-D506-4F8C-8332-3933A73EC2BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Sandbox|Any CPU = Sandbox|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Sandbox|Any CPU.ActiveCfg = Debug|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{712B0F0D-D137-4A32-B20D-1CBA9C95B46D}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Sandbox|Any CPU.ActiveCfg = Sandbox|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Sandbox|Any CPU.Build.0 = Sandbox|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{1BAA916B-B90F-4F24-982C-2FD989ABD037}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Sandbox|Any CPU.ActiveCfg = Sandbox|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Sandbox|Any CPU.Build.0 = Sandbox|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{CF4EE70D-48B9-4015-B00E-1E2A3CA6AA17}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Sandbox|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{09A2E91C-D506-4F8C-8332-3933A73EC2BE}.Staging|Any CPU.Build.0 = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8487F748-3504-44A8-BAA2-23160E2E603C}
+	EndGlobalSection
+EndGlobal
