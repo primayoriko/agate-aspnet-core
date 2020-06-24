@@ -97,14 +97,14 @@ namespace Agate_API.Controllers
                 }
             }
 
-            return CreatedAtAction("GetClass", new { id = @class.Grade }, @class);
+            return CreatedAtAction("GetClass", new { grade = @class.Grade, classNumber = @class.ClassNumber }, @class);
         }
 
         // DELETE: api/Classes/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Class>> DeleteClass(int id)
+        [HttpDelete("{grade}/{classNumber}")]
+        public async Task<ActionResult<Class>> DeleteClass(int grade, int classNumber)
         {
-            var @class = await _context.Class.FindAsync(id);
+            var @class = await _context.Class.FirstOrDefaultAsync(c => c.Grade == grade && c.ClassNumber == classNumber);
             if (@class == null)
             {
                 return NotFound();

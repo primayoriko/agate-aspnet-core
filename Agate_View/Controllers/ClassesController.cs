@@ -25,22 +25,6 @@ namespace Agate_View.Controllers
         }
 
         // GET: Classes/Details/5
-        /* public async Task<IActionResult> Details(int? grade)
-        {
-            if (grade == null)
-            {
-                return NotFound();
-            }
-
-            var @class = await _context.Class
-                .FirstOrDefaultAsync(m => m.Grade == grade);
-            if (@class == null)
-            {
-                return NotFound();
-            }
-
-            return View(@class);
-        }*/
         public async Task<IActionResult> Details(int? grade, int? classNumber)
         {
             if (grade == null || classNumber == null)
