@@ -48,6 +48,7 @@ namespace Agate_View.Controllers
         public IActionResult Create()
         {
             ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade");
+            ViewData["ClassNumber"] = new SelectList(_context.Class, "ClassNumber", "ClassNumber");
             return View();
         }
 
@@ -65,6 +66,7 @@ namespace Agate_View.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade", student.Grade);
+            ViewData["ClassNumber"] = new SelectList(_context.Class, "ClassNumber", "ClassNumber");
             return View(student);
         }
 
@@ -82,6 +84,7 @@ namespace Agate_View.Controllers
                 return NotFound();
             }
             ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade", student.Grade);
+            ViewData["ClassNumber"] = new SelectList(_context.Class, "ClassNumber", "ClassNumber", student.ClassNumber);
             return View(student);
         }
 

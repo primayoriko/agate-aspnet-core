@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Agate_Model;
 using SQLitePCL;
+using System.Collections;
+using Newtonsoft.Json;
 
 namespace Agate_View.Controllers
 {
@@ -16,18 +18,7 @@ namespace Agate_View.Controllers
     {
         private readonly IHttpClientFactory _clientFactory;
         private readonly SchoolContext _context;
-        /*public Students2Controller()
-        {
 
-        }
-        public Students2Controller(SchoolContext context)
-        {
-            _context = context;
-        }
-        public Students2Controller(IHttpClientFactory clientFactory)
-        {
-            _clientFactory = clientFactory;
-        } */
         public Students2Controller(SchoolContext context, IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
@@ -45,37 +36,49 @@ namespace Agate_View.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                return View(response);
+                string jsonData = response.Content.ReadAsStringAsync().Result;
+                var data = JsonConvert.DeserializeObject<IEnumerable<Student>>(jsonData);
+                return View(data);
             } 
             else
             {
                 return NotFound();
             }
-
         }
         // GET: Students/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if(id == null)
             {
                 return NotFound();
             }
 
-            var student = await _context.Student
-                .Include(s => s.CurrentClass)
-                .FirstOrDefaultAsync(m => m.StudentId == id);
-            if (student == null)
+            var request = new HttpRequestMessage(HttpMethod.Get,
+               $"https://localhost:44392/api/Students/{id}");
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string jsonData = response.Content.ReadAsStringAsync().Result;
+                var data = JsonConvert.DeserializeObject<Student>(jsonData);
+                if(data == null)
+                {
+                    return NotFound();
+                }
+                return View(data);
+            }
+            else
             {
                 return NotFound();
             }
-
-            return View(student);
         }
 
         // GET: Students/Create
         public IActionResult Create()
         {
-            ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade");
             return View();
         }
 
@@ -88,11 +91,17 @@ namespace Agate_View.Controllers
         {
             if (ModelState.IsValid)
             {
+                var request = new HttpRequestMessage(HttpMethod.Post,
+                    $"https://localhost:44392/api/Students/");
+
+                var client = _clientFactory.CreateClient();
+
+                var response = await client.SendAsync(request);
+
                 _context.Add(student);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade", student.Grade);
             return View(student);
         }
 
@@ -104,13 +113,27 @@ namespace Agate_View.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student.FindAsync(id);
-            if (student == null)
+            var request = new HttpRequestMessage(HttpMethod.Get,
+               $"https://localhost:44392/api/Students/{id}");
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string jsonData = response.Content.ReadAsStringAsync().Result;
+                var data = JsonConvert.DeserializeObject<Student>(jsonData);
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return View(data);
+            }
+            else
             {
                 return NotFound();
             }
-            ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade", student.Grade);
-            return View(student);
         }
 
         // POST: Students/Edit/5
@@ -145,7 +168,6 @@ namespace Agate_View.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Grade"] = new SelectList(_context.Class, "Grade", "Grade", student.Grade);
             return View(student);
         }
 
@@ -157,15 +179,27 @@ namespace Agate_View.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
-                .Include(s => s.CurrentClass)
-                .FirstOrDefaultAsync(m => m.StudentId == id);
-            if (student == null)
+            var request = new HttpRequestMessage(HttpMethod.Get,
+               $"https://localhost:44392/api/Students/{id}");
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string jsonData = response.Content.ReadAsStringAsync().Result;
+                var data = JsonConvert.DeserializeObject<Student>(jsonData);
+                if (data == null)
+                {
+                    return NotFound();
+                }
+                return View(data);
+            }
+            else
             {
                 return NotFound();
             }
-
-            return View(student);
         }
 
         // POST: Students/Delete/5
