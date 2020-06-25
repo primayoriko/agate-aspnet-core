@@ -16,8 +16,19 @@ namespace Agate_View.Controllers
     {
         private readonly IHttpClientFactory _clientFactory;
         private readonly SchoolContext _context;
+        /*public Students2Controller()
+        {
 
-        Students2Controller(SchoolContext context, IHttpClientFactory clientFactory)
+        }
+        public Students2Controller(SchoolContext context)
+        {
+            _context = context;
+        }
+        public Students2Controller(IHttpClientFactory clientFactory)
+        {
+            _clientFactory = clientFactory;
+        } */
+        public Students2Controller(SchoolContext context, IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
             _context = context;

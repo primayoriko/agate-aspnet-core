@@ -1,5 +1,8 @@
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\appsettings.Debug.json
 D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\appsettings.Sandbox.json
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\appsettings.Staging.json
 D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Agate_API.exe
 D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Agate_API.deps.json
@@ -151,4 +154,3 @@ D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\staticwebasse
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.genruntimeconfig.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\appsettings.Sandbox.json
