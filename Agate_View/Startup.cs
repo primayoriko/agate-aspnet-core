@@ -27,6 +27,7 @@ namespace Agate_View
         {
             services.AddDbContext<SchoolContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddHttpClient();
             services.AddControllersWithViews();
         }
 

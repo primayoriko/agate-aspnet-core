@@ -184,3 +184,8 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.d
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.genruntimeconfig.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csprojAssemblyReference.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Razor\Views\Students2\Create.cshtml.g.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Razor\Views\Students2\Delete.cshtml.g.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Razor\Views\Students2\Details.cshtml.g.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Razor\Views\Students2\Edit.cshtml.g.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Razor\Views\Students2\Index.cshtml.g.cs
