@@ -5,24 +5,21 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Agate_Model;
-using SQLitePCL;
-using System.Collections;
 using Newtonsoft.Json;
+using System.Text;
+using System.Text.Json;
 
 namespace Agate_View.Controllers
 {
     public class Students2Controller : Controller
     {
         private readonly IHttpClientFactory _clientFactory;
-        private readonly SchoolContext _context;
 
-        public Students2Controller(SchoolContext context, IHttpClientFactory clientFactory)
+        public Students2Controller(IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
-            _context = context;
         }
 
         public async Task<IActionResult> Index()
@@ -91,16 +88,31 @@ namespace Agate_View.Controllers
         {
             if (ModelState.IsValid)
             {
-                var request = new HttpRequestMessage(HttpMethod.Post,
-                    $"https://localhost:44392/api/Students/");
+                var studentJson = new StringContent(
+                    System.Text.Json.JsonSerializer.Serialize<Student>(student),
+                    Encoding.UTF8, "application/json");
 
                 var client = _clientFactory.CreateClient();
 
-                var response = await client.SendAsync(request);
+                var response = await client.PostAsync("https://localhost:44392/api/Students/", studentJson);
 
-                _context.Add(student);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                var success = true;
+
+                try
+                {
+                    response.EnsureSuccessStatusCode();
+                } 
+                catch (Exception)
+                {
+                    success = false;
+                }
+
+                if (success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                //_context.Add(student);
+                //await _context.SaveChangesAsync();
             }
             return View(student);
         }
@@ -150,23 +162,31 @@ namespace Agate_View.Controllers
 
             if (ModelState.IsValid)
             {
+                //_context.Update(student);
+                //await _context.SaveChangesAsync();
+                var studentJson = new StringContent(
+                    System.Text.Json.JsonSerializer.Serialize<Student>(student),
+                    Encoding.UTF8,
+                    "application/json");
+
+                var client = _clientFactory.CreateClient();
+
+                var response = await client.PutAsync($"https://localhost:44392/api/Students/{id}",
+                    studentJson);
+                var success = true;
+
                 try
                 {
-                    _context.Update(student);
-                    await _context.SaveChangesAsync();
+                    response.EnsureSuccessStatusCode();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (Exception)
                 {
-                    if (!StudentExists(student.StudentId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    success = false;
                 }
-                return RedirectToAction(nameof(Index));
+                if (success)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
             }
             return View(student);
         }
@@ -207,15 +227,11 @@ namespace Agate_View.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var student = await _context.Student.FindAsync(id);
-            _context.Student.Remove(student);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+            var client = _clientFactory.CreateClient();
+            var response = await client.DeleteAsync($"https://localhost:44392/api/Students/{id}");
 
-        private bool StudentExists(int id)
-        {
-            return _context.Student.Any(e => e.StudentId == id);
+            response.EnsureSuccessStatusCode();
+            return RedirectToAction(nameof(Index));
         }
     }
 }
