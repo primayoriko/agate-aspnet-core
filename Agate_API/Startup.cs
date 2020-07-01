@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,8 +30,15 @@ namespace Agate_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SchoolContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            {
+                var connnectionStrings = $"{Configuration["ConnectionStrings:DefaultConnection"]};password={Configuration["dbpass"]}";
+                options.UseMySql(connnectionStrings, b => b.MigrationsAssembly("Agate_API"));
+            });
             services.AddControllers();
+            /*var builder = new SqlConnectionStringBuilder(
+                Configuration.GetConnectionString("Movies"));
+            builder.Password = Configuration["DbPassword"];
+            _connection = builder.ConnectionString;*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

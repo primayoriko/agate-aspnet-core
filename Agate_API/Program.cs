@@ -16,6 +16,15 @@ namespace Agate_API
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
+            /*var host = new HostBuilder()
+                        .ConfigureAppConfiguration((hostContext, builder) =>
+                        {
+                            if (hostContext.HostingEnvironment.IsDevelopment())
+                            {
+                                builder.AddUserSecrets<Program>();
+                            }
+                        })
+                        .Build()*/
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;

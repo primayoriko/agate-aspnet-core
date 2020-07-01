@@ -229,6 +229,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_View.d
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_API.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_Model.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_View.pdb
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\id\Agate_View.resources.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csprojAssemblyReference.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.AssemblyInfo.cs

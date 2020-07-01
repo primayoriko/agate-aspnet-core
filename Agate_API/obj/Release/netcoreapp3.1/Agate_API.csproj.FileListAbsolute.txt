@@ -152,3 +152,5 @@ D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Release\netcoreapp3.1\staticwebas
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Release\netcoreapp3.1\Agate_API.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Release\netcoreapp3.1\Agate_API.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Release\netcoreapp3.1\Agate_API.genruntimeconfig.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Release\netcoreapp3.1\appsettings.Debug.json
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Release\netcoreapp3.1\appsettings.Staging.json

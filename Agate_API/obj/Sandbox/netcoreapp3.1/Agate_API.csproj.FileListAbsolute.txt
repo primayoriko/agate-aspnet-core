@@ -152,3 +152,5 @@ D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Sandbox\netcoreapp3.1\Agate_API.p
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Sandbox\netcoreapp3.1\Agate_API.genruntimeconfig.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Sandbox\netcoreapp3.1\Agate_API.csproj.CoreCompileInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Sandbox\netcoreapp3.1\Agate_API.MvcApplicationPartsAssemblyInfo.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Sandbox\netcoreapp3.1\appsettings.Debug.json
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Sandbox\netcoreapp3.1\appsettings.Staging.json

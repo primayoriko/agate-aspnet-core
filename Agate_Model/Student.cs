@@ -10,10 +10,13 @@ namespace Agate_Model
 {
     public class Student
     {
+        [Required]
         [Display(Name = "Student ID")]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int StudentId { get; set; }
+
+        [Required(ErrorMessage = "Please Input Name of the person")]
         public String Name { get; set; }
 
         /*[Display(Name = "Father Name")]

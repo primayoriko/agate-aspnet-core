@@ -4,6 +4,8 @@ In this exercise, I learned about:
 1. MVC Architecture
 2. HTTP Request
 3. Dependency Injection
-4. Routing
+4. Routing & Middleware
 5. Database & LINQ
 6. Multiple Software Environment
+7. Localization and Globalization
+8. User App Secret
