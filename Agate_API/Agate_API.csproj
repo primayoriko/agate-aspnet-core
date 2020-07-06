@@ -10,8 +10,17 @@
     <Compile Remove="Migrations\20200701063152_Env.Designer.cs" />
     <Compile Remove="Migrations\20200701063336_Env.cs" />
     <Compile Remove="Migrations\20200701063336_Env.Designer.cs" />
+    <Compile Remove="Migrations\20200701063620_Env.cs" />
+    <Compile Remove="Migrations\20200701063620_Env.Designer.cs" />
+    <Compile Remove="Migrations\20200701111006_DebugUpdate.cs" />
+    <Compile Remove="Migrations\20200701111006_DebugUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20200701112755_Deb.cs" />
+    <Compile Remove="Migrations\20200701112755_Deb.Designer.cs" />
+    <Compile Remove="Migrations\20200701113652_DebugEnv.cs" />
+    <Compile Remove="Migrations\20200701113652_DebugEnv.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.4.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
@@ -24,8 +33,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Agate_Model\Agate_Model.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

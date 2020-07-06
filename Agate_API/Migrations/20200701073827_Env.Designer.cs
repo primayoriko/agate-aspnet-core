@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agate_API.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20200701063620_Env")]
+    [Migration("20200701073827_Env")]
     partial class Env
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

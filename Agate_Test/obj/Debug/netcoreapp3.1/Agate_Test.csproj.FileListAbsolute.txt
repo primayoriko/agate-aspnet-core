@@ -233,8 +233,8 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\id\Agate_Vie
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csprojAssemblyReference.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.AssemblyInfo.cs
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csproj.CoreCompileInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csproj.CopyComplete
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.genruntimeconfig.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\fr\Agate_View.resources.dll

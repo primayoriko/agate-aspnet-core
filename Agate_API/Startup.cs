@@ -19,20 +19,30 @@ namespace Agate_API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfiguration Configuration { get; }
+        public IWebHostEnvironment _env;
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _env = env;
         }
 
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SchoolContext>(options =>
             {
-                var connnectionStrings = $"{Configuration["ConnectionStrings:DefaultConnection"]};password={Configuration["dbpass"]}";
-                options.UseMySql(connnectionStrings, b => b.MigrationsAssembly("Agate_API"));
+                if (_env.IsDevelopment())
+                {
+                    var connnectionStrings = $"{Configuration["ConnectionStrings:DefaultConnection"]};password={Configuration["dbpass"]}";
+                    options.UseMySql(connnectionStrings, b => b.MigrationsAssembly("Agate_API"));
+                }
+                else
+                {
+                    var connnectionStrings = $"{Configuration["ConnectionStrings:DefaultConnection"]}";
+                    options.UseMySql(connnectionStrings, b => b.MigrationsAssembly("Agate_API"));
+                }
             });
             services.AddControllers();
             /*var builder = new SqlConnectionStringBuilder(
@@ -42,11 +52,16 @@ namespace Agate_API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            if (env.IsDevelopment())
+            //_env.EnvironmentName = "Development";
+            if (_env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
             }
 
             app.UseHttpsRedirection();

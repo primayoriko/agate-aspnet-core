@@ -154,3 +154,8 @@ D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\staticwebasse
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.genruntimeconfig.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.OData.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Microsoft.OData.Core.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Debug\netcoreapp3.1\Agate_API.MvcApplicationPartsAssemblyInfo.cs

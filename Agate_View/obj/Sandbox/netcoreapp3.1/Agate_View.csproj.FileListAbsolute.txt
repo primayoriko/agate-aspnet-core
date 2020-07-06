@@ -169,9 +169,6 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Agate_View
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Agate_View.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Agate_View.genruntimeconfig.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Sandbox\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Agate_View.csproj.CoreCompileInputs.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cs
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Razor\Views\Classes\Create.cshtml.g.cs
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Razor\Views\Classes\Delete.cshtml.g.cs
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Sandbox\netcoreapp3.1\Razor\Views\Classes\Details.cshtml.g.cs
