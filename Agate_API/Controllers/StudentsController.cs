@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Agate_Model;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace Agate_API.Controllers
 {
@@ -52,10 +53,10 @@ namespace Agate_API.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(student).State = EntityState.Modified;
-
             try
             {
+                _context.Update(student);
+                _context.Entry(student).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -113,6 +114,32 @@ namespace Agate_API.Controllers
             await _context.SaveChangesAsync();
 
             return student;
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<ActionResult<Student>> Patch(int id, [FromBody] JsonPatchDocument<Student> studentPatch)
+        {
+            if (studentPatch != null && ModelState.IsValid)
+            {
+                Student student = null;
+                try
+                {
+                    //var obj = JsonConvert.DeserializeObject<Student>(student);
+                    //var jsonPatch = new JsonPatchDocument<Student>().Replace(x => x.Name, "Jonathan");
+                    student = await _context.Student.FindAsync(id);
+                    studentPatch.ApplyTo(student);
+                    _context.Update(student);
+                    _context.Entry(student).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                }
+                catch (Exception)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                return CreatedAtAction("GetStudent", new { id }, student);
+            }
+            return BadRequest();
         }
 
         private bool StudentExists(int id)

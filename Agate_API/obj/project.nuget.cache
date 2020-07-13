@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jOoruXHqBccBEO85LQmS9aQxb///8TZByJttyCTdT7IJXhUVQlOubPPfoue8BZNL8P+0dnwkU8lbTTRCdEZkSA==",
+  "dgSpecHash": "FN/e0rGToWEoD4jkPt02nFy+lHpMVaZcEYLnBxf4Aq7j3oRoTHOYo0TOgFh7e9RM2EW298kx+vdfDxrY/fM6Jw==",
   "success": true,
   "projectFilePath": "D:\\Kuliah\\Internship\\Agate\\Agate\\Agate_API\\Agate_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.5\\microsoft.aspnetcore.jsonpatch.3.1.5.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.odata\\7.4.1\\microsoft.aspnetcore.odata.7.4.1.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
@@ -60,7 +61,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\YORIKO\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.1.1\\pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",

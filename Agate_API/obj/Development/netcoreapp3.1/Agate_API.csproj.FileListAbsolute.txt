@@ -145,8 +145,6 @@ D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Development\netcoreapp3.1\Agate_M
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.csprojAssemblyReference.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.AssemblyInfo.cs
-D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.csproj.CoreCompileInputs.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.MvcApplicationPartsAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.RazorTargetAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.csproj.CopyComplete
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\staticwebassets\Agate_API.StaticWebAssets.Manifest.cache
@@ -154,3 +152,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\staticw
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_API\obj\Development\netcoreapp3.1\Agate_API.genruntimeconfig.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Development\netcoreapp3.1\Microsoft.AspNetCore.OData.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Development\netcoreapp3.1\Microsoft.OData.Core.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Development\netcoreapp3.1\Microsoft.OData.Edm.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_API\bin\Development\netcoreapp3.1\Microsoft.Spatial.dll

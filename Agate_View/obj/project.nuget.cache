@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ryU/PRJRyvXB/xdqmSjq4MmF0+hS5F+t31qXT7B6WGXZtnPW4ypeKgytdq42AwC75K2cAI3UtlqtUtJCceFxyA==",
+  "dgSpecHash": "CAd3xfjdwA8XScGGGskxngfHphcUuemIowW3yP8kFRbmY2wsSHuS1zQyAPhcjPcGhudp0JL5YhQfUfcQ3bTiNA==",
   "success": true,
   "projectFilePath": "D:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Agate_View.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.5\\microsoft.aspnetcore.jsonpatch.3.1.5.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.odata\\7.4.1\\microsoft.aspnetcore.odata.7.4.1.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
@@ -60,7 +61,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\YORIKO\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.1.1\\pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "C:\\Users\\YORIKO\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",

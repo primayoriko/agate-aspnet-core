@@ -154,9 +154,6 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.R
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csproj.GenerateResource.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.AssemblyInfo.cs
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csproj.CoreCompileInputs.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cs
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.RazorAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.RazorAssemblyInfo.cs
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\id\Agate_View.resources.dll

@@ -2,24 +2,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Agate_Model;
 using Microsoft.AspNet.OData.Builder;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OData.Edm;
 
 namespace Agate_OData
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,13 +31,30 @@ namespace Agate_OData
         private static IEdmModel GetEdmModel()
         {
             ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
-            var entity = builder.EntitySet<Class>("Classes");
-            entity.EntityType.HasKey(e => new { e.Grade, e.ClassNumber });
-            builder.EntitySet<Student>("Students");
+            //var entity = builder.EntitySet<Class>("Classes");
+            builder.EntitySet<Class>("Classes").EntityType.HasKey(e => e.Grade);
+            //builder.EntitySet<Class>("Classes").EntityType.HasKey(e => new { e.Grade, e.ClassNumber });
+            //var entity2 = builder.EntitySet<Student>("Students");
+            builder.EntitySet<Student>("Students").EntityType.HasKey(e => e.StudentId);
             return builder.GetEdmModel();
         }
 
-        public IConfiguration Configuration { get; }
+        private static NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter()
+        {
+            var builder = new ServiceCollection()
+                .AddLogging()
+                .AddMvc()
+                .AddNewtonsoftJson()
+                .Services.BuildServiceProvider();
+
+            return builder
+                .GetRequiredService<IOptions<MvcOptions>>()
+                .Value
+                .InputFormatters
+                .OfType<NewtonsoftJsonPatchInputFormatter>()
+                .First();
+        }
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -44,10 +64,12 @@ namespace Agate_OData
                 opts.UseInMemoryDatabase("SchoolDB");
             });
 
-            services.AddControllers(mvcOptions =>
+            services.AddControllers(options =>
             {
-                mvcOptions.EnableEndpointRouting = false;
-            });
+                options.EnableEndpointRouting = false;
+                //options.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
+            })
+                    .AddNewtonsoftJson();
 
             services.AddOData();
         }
@@ -72,7 +94,7 @@ namespace Agate_OData
 
             app.UseMvc(routeBuilder =>
             {
-                routeBuilder.Select().Expand().Count().Filter().OrderBy().MaxTop(1000).SkipToken().Build();
+                routeBuilder.Select().Expand().Count().Filter().OrderBy().SkipToken().Build();
                 routeBuilder.MapODataServiceRoute("odata", "odata", GetEdmModel());
             });
 
