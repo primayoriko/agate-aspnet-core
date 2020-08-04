@@ -23,9 +23,11 @@ namespace Agate_OData
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        public Startup(IConfiguration configuration)
+        public ILogger Logger { get; }
+        public Startup(IConfiguration configuration)//, ILogger logger)
         {
             Configuration = configuration;
+            //Logger = logger;
         }
 
         private static IEdmModel GetEdmModel()
@@ -59,6 +61,7 @@ namespace Agate_OData
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //System.Diagnostics.Debug.WriteLine("sadasd");
             services.AddDbContext<SchoolContext>(opts =>
             {
                 opts.UseInMemoryDatabase("SchoolDB");

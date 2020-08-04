@@ -18,6 +18,8 @@
     <Compile Remove="Migrations\20200701112755_Deb.Designer.cs" />
     <Compile Remove="Migrations\20200701113652_DebugEnv.cs" />
     <Compile Remove="Migrations\20200701113652_DebugEnv.Designer.cs" />
+    <Compile Remove="Migrations\20200722015100_Acc.cs" />
+    <Compile Remove="Migrations\20200722015100_Acc.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.5" />
@@ -31,6 +33,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Agate_Model\Agate_Model.csproj" />

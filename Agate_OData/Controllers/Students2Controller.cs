@@ -13,18 +13,19 @@ namespace Agate_OData.Controllers
     [ApiController]
     public class Students2Controller : ControllerBase
     {
-        private readonly string _clientName = "https://localhost:44391/odata/";
+        //private readonly string _clientName = "https://localhost:44391/odata/";
+        private readonly ODataClient _client;
         public Students2Controller()
         {
-
+            _client = new ODataClient("https://localhost:44391/odata/");
         }
         // GET: api/<Students2Controller>
         [HttpGet]
         [ActionName("GetAll")]
         public async Task<ActionResult<IEnumerable<Student>>> Get()
         {
-            var client = new ODataClient(_clientName);
-            var students = await client
+            //var client = new ODataClient(_clientName);
+            var students = await _client
                                 .For<Student>()
                                 .FindEntriesAsync();
             return new ActionResult<IEnumerable<Student>>(students);
@@ -32,10 +33,11 @@ namespace Agate_OData.Controllers
 
         // GET api/<Students2Controller>/5
         [HttpGet("{id}")]
+        [ActionName("Get")]
         public async Task<ActionResult<Student>> Get(int id)
         {
-            var client = new ODataClient(_clientName);
-            var student = await client
+            //var client = new ODataClient(_clientName);
+            var student = await _client
                                 .For<Student>()
                                 .Filter(x => x.StudentId == id)
                                 .FindEntryAsync();
@@ -48,18 +50,45 @@ namespace Agate_OData.Controllers
         {
             try
             {
-                var client = new ODataClient(_clientName);
-                var addStudent = await client
+                var client = _client
                                     .For<Student>()
-                                    .Set(student)
+                                    .Set(student);
+                //var client = new ODataClient(_clientName);
+                var addStudent = await client
                                     .InsertEntryAsync();
             }
-            catch (Exception)
+            catch (Microsoft.OData.ODataException e)
             {
-                //return BadRequest();
+
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return StatusCode(402);
             }
 
             return CreatedAtAction("GetAll", new { }, null);
+        }
+
+        [HttpPost("{id}")]
+        public async Task<ActionResult<Student>> UpdateName(int id, [FromBody] string name)
+        {
+            try
+            {
+                await _client
+                        .For<Student>()
+                        .Key(id)
+                        .Set(new { Name = name })
+                        .UpdateEntryAsync();
+
+            } catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return StatusCode(402);
+                //return BadRequest();
+            }
+            return RedirectToAction("Get", new { id });
+            //return CreatedAtAction("GetAll", new { }, await );
         }
 
         // PUT api/<Students2Controller>/5

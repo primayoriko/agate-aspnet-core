@@ -13,7 +13,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using Pomelo.EntityFrameworkCore.MySql;
+using Swashbuckle.AspNetCore;
 
 namespace Agate_API
 {
@@ -44,7 +46,30 @@ namespace Agate_API
                     options.UseMySql(connnectionStrings, b => b.MigrationsAssembly("Agate_API"));
                 }
             });
+            
             services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "AgateSwagger",
+                    Description = "API Documentation for Agate Project Training",
+                    TermsOfService = new Uri("http://github.com/primayoriko/"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Naufal Prima Yoriko",
+                        Email = "primayoriko@gmail.com",
+                        Url = new Uri("http://primayoriko.github.io"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "AGATE",
+                        Url = new Uri("https://agate.id"),
+                    }
+                });
+            });
             /*var builder = new SqlConnectionStringBuilder(
                 Configuration.GetConnectionString("Movies"));
             builder.Password = Configuration["DbPassword"];
@@ -65,6 +90,20 @@ namespace Agate_API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+            /*app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "agateswagger/swagger/{documentName}/swagger.json";
+            });*/
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "AgateSwagger");
+                //c.SwaggerEndpoint("/agateswagger/swagger/v1/swagger.json", "AgateSwagger");
+                //c.RoutePrefix = "agateswagger/swagger";
+                //c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 

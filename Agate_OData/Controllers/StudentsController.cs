@@ -76,19 +76,14 @@ namespace Agate_OData.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                /*if (StudentExists(student.StudentId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }*/
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return StatusCode(401);
             }
             //"GetStudent", new { id = student.StudentId }, student
-            return CreatedAtAction("Get", new { }, student);
+            //return CreatedAtAction("Get", new { }, student);
+            return StatusCode(201);
         }
 
         [HttpPut]
@@ -107,12 +102,14 @@ namespace Agate_OData.Controllers
                 _context.Entry(student).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return StatusCode(401);
             }
 
-            return CreatedAtAction("Get", new { }, student);
+            //return CreatedAtAction("Get", new { }, student);
+            return StatusCode(201);
         }
 
 
@@ -123,22 +120,25 @@ namespace Agate_OData.Controllers
         {
             if(studentPatch != null && ModelState.IsValid)
             {
+                Student student;
                 try
                 {
                     //var obj = JsonConvert.DeserializeObject<Student>(student);
                     //var jsonPatch = new JsonPatchDocument<Student>().Replace(x => x.Name, "Jonathan");
-                    var student = await _context.Student.FindAsync(id);
-                    studentPatch.ApplyTo(student);                    
+                    student = await _context.Student.FindAsync(id);
+                    studentPatch.ApplyTo(student, ModelState);                    
                     _context.Update(student);
                     _context.Entry(student).State = EntityState.Modified;
                     await _context.SaveChangesAsync();
                 } 
-                catch (Exception)
+                catch (Exception e)
                 {
-                    return BadRequest(ModelState);
+                    System.Diagnostics.Debug.WriteLine(e.Message);
+                    return StatusCode(401);
+                    //return BadRequest(ModelState);
                 }
-
-                return CreatedAtAction("Get", new { }, null);
+                //return CreatedAtAction("Get", new { }, student);
+                return StatusCode(201);
             }
             return BadRequest();
         }
@@ -157,8 +157,8 @@ namespace Agate_OData.Controllers
 
             _context.Student.Remove(student);
             await _context.SaveChangesAsync();
-
-            return student;
+            return StatusCode(201);
+            //return student;
         }
     }
 }

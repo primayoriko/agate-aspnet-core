@@ -41,11 +41,11 @@ namespace Agate_API.Controllers
 
             return @class;
         }
-
+        
         // PUT: api/Classes/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpGet("{grade}/{classNumber}")]
+        [HttpPut("{grade}/{classNumber}")]
         public async Task<IActionResult> PutClass(int grade, int classNumber, Class @class)
         {
             if (grade != @class.Grade && classNumber != @class.ClassNumber)

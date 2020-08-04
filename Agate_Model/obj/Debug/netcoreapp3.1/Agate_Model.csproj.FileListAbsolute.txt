@@ -1,9 +1,9 @@
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\bin\Debug\netcoreapp3.1\Agate_Model.deps.json
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\bin\Debug\netcoreapp3.1\Agate_Model.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\bin\Debug\netcoreapp3.1\Agate_Model.pdb
-D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.csprojAssemblyReference.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.AssemblyInfo.cs
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.pdb
+D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.csprojAssemblyReference.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Debug\netcoreapp3.1\Agate_Model.csproj.CoreCompileInputs.cache

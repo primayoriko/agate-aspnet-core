@@ -6,3 +6,4 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Development\netcoreapp3.1\Agate
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Development\netcoreapp3.1\Agate_Model.AssemblyInfo.cs
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Development\netcoreapp3.1\Agate_Model.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Development\netcoreapp3.1\Agate_Model.pdb
+D:\Kuliah\Internship\Agate\Agate\Agate_Model\obj\Development\netcoreapp3.1\Agate_Model.csproj.CoreCompileInputs.cache
