@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Agate_API.Controllers;
 using Agate_Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,6 +20,13 @@ using Swashbuckle.AspNetCore;
 
 namespace Agate_API
 {
+    public static class MiddlewareExtensions
+    {
+        public static IApplicationBuilder UseCustomMiddleware(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<CustomMiddleware>();
+        }
+    }
     public class Startup
     {
         public IConfiguration Configuration { get; }
@@ -106,6 +114,8 @@ namespace Agate_API
             });
 
             app.UseRouting();
+
+            app.UseCustomMiddleware();
 
             app.UseAuthorization();
 

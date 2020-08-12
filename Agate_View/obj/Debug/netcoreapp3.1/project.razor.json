@@ -20546,6 +20546,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Views\\Auth\\Login.cshtml",
+      "TargetPath": "Views\\Auth\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Views\\Classes\\Create.cshtml",
       "TargetPath": "Views\\Classes\\Create.cshtml",
       "FileKind": "mvc"
@@ -20586,6 +20591,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Views\\Shared\\_AuthPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_AuthPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Views\\Students\\Index.cshtml",
       "TargetPath": "Views\\Students\\Index.cshtml",
       "FileKind": "mvc"
@@ -20603,6 +20613,11 @@
     {
       "FilePath": "d:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Views\\Students\\Edit.cshtml",
       "TargetPath": "Views\\Students\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Kuliah\\Internship\\Agate\\Agate\\Agate_View\\Views\\Auth\\Register.cshtml",
+      "TargetPath": "Views\\Auth\\Register.cshtml",
       "FileKind": "mvc"
     },
     {

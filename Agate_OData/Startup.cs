@@ -100,11 +100,6 @@ namespace Agate_OData
                 routeBuilder.Select().Expand().Count().Filter().OrderBy().SkipToken().Build();
                 routeBuilder.MapODataServiceRoute("odata", "odata", GetEdmModel());
             });
-
-            /*app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });*/
         }
     }
 }

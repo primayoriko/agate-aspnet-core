@@ -216,3 +216,10 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Web.H
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\WebActivatorEx.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csproj.CoreCompileInputs.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cache
