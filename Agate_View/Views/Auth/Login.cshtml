@@ -1,6 +1,9 @@
-﻿@model StudentUser
+﻿@model TemplateLoginViewModelClass
 @{
 }
+
+@*  This view is optional, and only used when you use Identity service to make authentication in ASP NET Core
+    You can remove it if not needed *@
 
 <h1> Login </h1>
 <div class="row">
@@ -8,28 +11,15 @@
         <form asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <input type="hidden" value="123123" asp-for="Name" class="form-control" />
-            </div>
-            <div class="form-group">
                 <label class="control-label">Username</label>
-                <input asp-for="UserName" class="form-control" />
-                <span asp-validation-for="UserName" class="text-danger"></span>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Password" class="control-label"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ConfirmPassword" class="control-label"></label>
-                <input asp-for="ConfirmPassword" class="form-control" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-            @*<div class="form-group form-check">
-            <label class="form-check-label">
-                <input class="form-check-input" asp-for="UserName" /> @Html.DisplayNameFor(model => model.UserName)
-            </label>
-        </div>*@
             <div>
                 <input asp-for="Remember" />
                 <label asp-for="Remember"></label>

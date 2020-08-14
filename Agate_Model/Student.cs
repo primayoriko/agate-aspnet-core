@@ -25,7 +25,6 @@ namespace Agate_Model
         [Display(Name = "Class Number")]
         public int ClassNumber { get; set; }
         public int Grade { get; set; }
-
         public Class CurrentClass { get; set; }
     }
 }

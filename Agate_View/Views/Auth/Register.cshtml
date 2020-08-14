@@ -1,6 +1,9 @@
-﻿@model StudentUser
+﻿@model TemplateRegisterViewModelClass
 @{
 }
+
+@*  This view is optional, and only used when you use Identity service to make authentication in ASP NET Core
+    You can remove it if not needed *@
 
 <h1> Register </h1>
 <div class="row">
@@ -13,14 +16,14 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="StudentID" class="control-label"></label>
-                <input asp-for="StudentID" class="form-control" />
-                <span asp-validation-for="StudentID" class="text-danger"></span>
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label class="control-label">Username</label>
-                <input asp-for="UserName" class="form-control" />
-                <span asp-validation-for="UserName" class="text-danger"></span>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Email" class="control-label"></label>
@@ -37,9 +40,6 @@
                 <input asp-for="ConfirmPassword" class="form-control" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
-            @* <div class="form-group">
-                <input asp-for="UserName" value="0" type="hidden" class="form-control" />
-            </div> *@
             <div class="form-group">
                 <input type="submit" value="Register" class="btn btn-primary" />
             </div>
