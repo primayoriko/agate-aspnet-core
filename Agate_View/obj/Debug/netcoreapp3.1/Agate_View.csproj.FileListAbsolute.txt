@@ -15,6 +15,9 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\id\Agate_Vie
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\fr\Agate_View.resources.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Agate_View.Views.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Agate_View.Views.pdb
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -55,6 +58,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Ex
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.OData.Core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
@@ -64,6 +68,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Vi
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
@@ -73,6 +78,10 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\SQLitePCLRaw
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -84,6 +93,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Diagn
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\WebActivatorEx.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -168,6 +178,9 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.R
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csproj.GenerateResource.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.AssemblyInfo.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csproj.CoreCompileInputs.cache
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.RazorAssemblyInfo.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.RazorAssemblyInfo.cs
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\id\Agate_View.resources.dll
@@ -210,16 +223,3 @@ D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\staticwebass
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.genruntimeconfig.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Web.Http.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\WebActivatorEx.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.csproj.CoreCompileInputs.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cs
-D:\Kuliah\Internship\Agate\Agate\Agate_View\obj\Debug\netcoreapp3.1\Agate_View.MvcApplicationPartsAssemblyInfo.cache

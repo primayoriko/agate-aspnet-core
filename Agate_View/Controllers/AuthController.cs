@@ -38,7 +38,7 @@ namespace Agate_View.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(/*[Bind("StudentID","Email","Name","UserName","Password")]*/[FromForm]StudentUser user)
+        public async Task<IActionResult> Register(/*[Bind("StudentID","Email","Name","Username","Password")]*/[FromForm] RegisterViewModel user)
         {
             if (!ModelState.IsValid)
             {
@@ -49,14 +49,13 @@ namespace Agate_View.Controllers
                 StudentID = user.StudentID,
                 Email = user.Email,
                 Name = user.Name,
-                UserName = user.UserName,
+                UserName = user.Username,
             };
 
             var res = await _userManager.CreateAsync(std, user.Password);
 
             if (res.Succeeded)
             {
-                //await _signInManager.SignInAsync(std, false);
                 return Redirect("/");
 
             } else
@@ -70,7 +69,7 @@ namespace Agate_View.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login([FromForm] StudentUser user)
+        public async Task<IActionResult> Login([FromForm] LoginViewModel user)
         {
             if (!ModelState.IsValid)
             {
@@ -82,13 +81,9 @@ namespace Agate_View.Controllers
                 return View();
             }
 
-            var res = await _signInManager.PasswordSignInAsync(user.UserName, user.Password, user.Remember, false);
+            var res = await _signInManager.PasswordSignInAsync(user.Username, user.Password, user.Remember, false);
             if (!res.Succeeded)
             {
-                /*foreach (var error in res.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }*/
                 ModelState.AddModelError("", "Invalid login attempt");
                 return View(user);
             }

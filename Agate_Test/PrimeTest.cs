@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Test_App;
 using Xunit;
 
-namespace XUnit_Test
+namespace Agate_Test
 {
     public class PrimeTest
     {

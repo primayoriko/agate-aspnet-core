@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agate_Test", "Agate_Test\Ag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agate_OData", "Agate_OData\Agate_OData.csproj", "{8627B0F6-7886-4CB4-9A83-1A3335426F31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agate_OData-Client", "Agate_OData-Client\Agate_OData-Client.csproj", "{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,16 +70,6 @@ Global
 		{8627B0F6-7886-4CB4-9A83-1A3335426F31}.Sandbox|Any CPU.Build.0 = Debug|Any CPU
 		{8627B0F6-7886-4CB4-9A83-1A3335426F31}.Staging|Any CPU.ActiveCfg = Debug|Any CPU
 		{8627B0F6-7886-4CB4-9A83-1A3335426F31}.Staging|Any CPU.Build.0 = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Development|Any CPU.ActiveCfg = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Development|Any CPU.Build.0 = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Sandbox|Any CPU.ActiveCfg = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Sandbox|Any CPU.Build.0 = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Staging|Any CPU.ActiveCfg = Debug|Any CPU
-		{884A37A1-84B9-4662-8066-3EE4DC1D4F2A}.Staging|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

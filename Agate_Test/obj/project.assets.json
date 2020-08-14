@@ -10082,7 +10082,6 @@
       "Microsoft.AspNetCore.JsonPatch >= 3.1.5",
       "Microsoft.AspNetCore.OData >= 7.4.1",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
-      "Swashbuckle >= 5.6.0",
       "Swashbuckle.AspNetCore >= 5.5.1",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -10152,10 +10151,6 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.5.0, )"
-          },
-          "Swashbuckle": {
-            "target": "Package",
-            "version": "[5.6.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

@@ -16,6 +16,9 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_Test.r
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_Test.runtimeconfig.dev.json
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_Test.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Agate_Test.pdb
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -56,6 +59,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.Ex
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.OData.Core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -73,6 +77,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.Vi
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
@@ -82,6 +87,10 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -93,6 +102,7 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Diagn
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\WebActivatorEx.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\xunit.assert.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\xunit.core.dll
@@ -245,13 +255,8 @@ D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\id\Agate_Vie
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csprojAssemblyReference.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.AssemblyInfoInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.AssemblyInfo.cs
+D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csproj.CoreCompileInputs.cache
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.csproj.CopyComplete
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.dll
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.pdb
 D:\Kuliah\Internship\Agate\Agate\Agate_Test\obj\Debug\netcoreapp3.1\Agate_Test.genruntimeconfig.cache
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Web.Http.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\System.Web.Http.WebHost.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
-D:\Kuliah\Internship\Agate\Agate\Agate_Test\bin\Debug\netcoreapp3.1\WebActivatorEx.dll

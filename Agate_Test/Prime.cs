@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Test_App
+namespace Agate_Test
 {
     public class Prime
     {
