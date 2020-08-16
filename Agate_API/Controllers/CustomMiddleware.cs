@@ -68,6 +68,5 @@ namespace Agate_API.Controllers
 
             return $"{response.StatusCode}: {text}";
         }
-
     }
 }
