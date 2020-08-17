@@ -1,5 +1,52 @@
-# ASP Net Core App - Agate Exercise 01
-My exercise project with ASP .NET Core in [Agate](https://agate.id/) Internship. This app is a CRUD app that based on many forms, they are Web MVC App and API App (separated into two projects, normal/basic API and [OData](https://www.odata.org/) (Open Data) protocol API).
+# ASP .Net Core School Application - Agate Exercise 01
+
+My exercise project with ASP .NET Core in [Agate](https://agate.id/) Internship. This app is a CRUD application of a School that based on many forms, they are Web MVC Appliaction and API Application (separated into two projects, these are normal/basic API and [OData](https://www.odata.org/) (Open Data) protocol API).
+
+## Solution Structure
+
+---------
+I classify my program solution into five separate projects, they are
+
+1. Agate_Model - General model for this solution
+2. Agate_API  - Basic API Application
+3. Agate_View  - MVC Application
+4. Agate_Odata - OData-based API Application
+5. Agate_Test - Unit Test with XUnit
+
+## Data Model
+
+---------
+In this app, I made two entities with EF Core, that translated into two tables in MySQL, they are
+
+1. Student
+   * asd
+   * sad
+2. Class
+   * asd
+   * sad
+
+Student and Class entity have one-to-many relationship, that every class has many students, but a student only join one class. 
+
+## Feature Used
+
+---------
+In this exercise app, I have learned and implemented these
+1. JSON Data Format with the Serialization & Deserialization of Data
+2. Dependency Injection
+3. Routing & Middleware
+4. Database (with In-memory and MySQL DB) & LINQ (Language-Integrated Query)
+5. Migration & Data Seeding
+6. Multiple Software Environment (Development, Debug, Staging, Sandbox, Release)
+7. User App Secret
+8. MVC (Model-View-Controller) Architecture
+9. View Rendering & Tag Helper
+10. HTTP Request (API's data fetching)
+11. HTTP Context Modifying
+12. Authentication (with ASP .NET Core Identity Library)
+13. Localization & Globalization
+14. OData (Open Data) Protocol
+15. Swagger (an API Documenting Library)
+16. Unit Test (with XUnit Library)
 
 ## Requirement
 --------------
@@ -21,39 +68,18 @@ Before you run this app, you should have these application
 
 ## How to Use
 --------
-1. sadsa
-2. sd
-3. asd
-4. as
-
-## Solution Structure
----------
-I classify my program solution into five separate projects, they are
-1. Agate_Model
-2. Agate_API
-3. Agate_View
-4. Agate_Odata
-5. Agate_Test
-
-## Data Model
------------
-In this app, I made two entities with EF Core, that translated into two tables in MySQL that are
-1. Student
-   * asd
-   * sad
-2. Class
-   * asd
-   * sad
-
-## Feature Used
-------
-In this exercise app, I learned and implemented these
-1. MVC Architecture
-2. HTTP Request
-3. Dependency Injection
-4. Routing & Middleware
-5. Database & LINQ
-6. Multiple Software Environment
-7. Localization and Globalization
-8. User App Secret
-
+To use this solution, it's separate per project, so these are the steps
+1. Agate_API
+   1. sads
+   2. sadsa
+   3. sad
+2. Agate_View
+   1. sads
+   2. sadsa
+   3. sad
+3. Agate_Odata
+   1. sd
+   2. sad
+4. Agate_Test
+   1. sads
+   2. sad
