@@ -19,11 +19,13 @@ I classify my program solution into five separate projects, they are
 In this app, I made two entities with EF Core, that translated into two tables in MySQL, they are
 
 1. Student
-   * asd
-   * sad
+   * ID (Int - PK)
+   * Name (String)
+   * Grade (Int)
+   * Class Number (Int)
 2. Class
-   * asd
-   * sad
+   * Grade (Int - PK)
+   * Class Number (Int - PK)
 
 Student and Class entity have one-to-many relationship, that every class has many students, but a student only join one class. 
 
@@ -68,7 +70,8 @@ Before you run this app, you should have these application
 
 ## How to Use
 --------
-To use this solution, it's separate per project, so these are the steps
+**NOT FINISHED YET, contact me for details**
+<!-- To use this solution, it's separate per project, so these are the steps
 1. Agate_API
    1. sads
    2. sadsa
@@ -82,4 +85,4 @@ To use this solution, it's separate per project, so these are the steps
    2. sad
 4. Agate_Test
    1. sads
-   2. sad
+   2. sad -->
